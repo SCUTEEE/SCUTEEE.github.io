@@ -1,24 +1,34 @@
+<!-- 首页及其他页面的布局-Layout -->
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+<head>
+<!-- 引入head标签 -->
+{% include head.html %}
+</head>
+<body>
+<!-- 页面主体 -->
+{{ content }}
 
-  <body dir="ltr" data-md-color-primary="{{ site.themeColor }}" data-md-color-accent="{{ site.accentColor }}">
-    {% include navigation.html %}
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 5,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
 
-    <div class="md-container">         
-        <main class="md-main">
-            <div class="md-main__inner md-grid" data-md-component="container">
-            {% include sidebar.html %}
-                <div id="md-container-pancakes">
-                {{ content }}
-                </div>
-            </div>
-        </main>
-    </div>
-    {% include footer.html %}
-    {% include headers.html %}
-    {% include tags.html %}
-    {% include scrolltop.html %}
-    {% include google-analytics.html %}
-  </body>
+</body>
 </html>
