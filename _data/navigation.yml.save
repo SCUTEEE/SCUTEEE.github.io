@@ -1,0 +1,268 @@
+header:
+  - titles:
+      # @start locale config
+      en: &EN Home
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 主页
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 主页
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 홈
+      ko-KR: *KO
+      fr: &FR Accueil
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /
+  - titles:
+      # @start locale config
+      en: &EN Courses
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 课程
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 課程
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 코스
+      ko-KR: *KO
+      fr: &FR Sûrs
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /courses/index
+    key: courses
+
+  - titles:
+      en: &EN Archive
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 归档
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 歸檔
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 아카이브
+      ko-KR: *KO
+    url: /archive.html
+
+  - titles:
+      en: &EN About
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 关于
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 關於
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 소개
+      ko-KR: *KO
+    url: /about.html
+
+####################
+#     大学课程     #
+####################
+courses:
+  - title: 电科与信工
+    children:
+      - title: 索引
+        url: /courses/index
+      - title: 大一（无）
+        url: /courses/freshman/index
+      - title: 大二
+        url: /courses/sophomore/index
+      - title: 大三（无）
+        url: /courses/junior/index
+      - title: 大四（无）
+        url: /courses/senior/index
+
+################
+#     大二     #
+################
+sophomore:
+  - title: 简介
+    children:
+      - title: 学长的话
+        url: /courses/sophomore/index
+  - title: 上学期
+  - title: 下学期
+    children:
+      - title: 概率论与数理统计
+        url: /courses/sophomore/statistics/index
+      - title: 地磁场与电磁波
+        url: /courses/sophomore/electromagnetism/index
+      - title: 半导体物理
+        url: /courses/sophomore/semiconductor/index
+      - title: 微机系统与接口
+        url: /courses/sophomore/microcomputer/index
+      - title: 通信电子线路
+        url: /courses/sophomore/commuelectronic/index
+      - title: 信号与系统
+        url: /courses/sophomore/signalandsystem/index
+
+#### 概率论与数理统计 ####
+statistics:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/statistics/index
+      - title: 资源
+  - title: 概率论的基本概念
+    children:
+      - title: 古典概型
+      - title: 条件概率与独立性
+  - title: 随机变量及其分布
+    children:
+      - title:
+  - title: 随机向量及其分布
+  - title: 大数定律与中心极限定理
+  - title: 数理统计的基本概念
+  - title: 参数估计
+  - title: 假设检验
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 电磁场与电磁波 ####
+electromagnetism:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/electromagnetism/index
+      - title: 资源
+  - title: 矢量分析
+    children:
+      - title: 坐标系和代数
+      - title: 梯度、散度、环度
+      - title: 亥姆霍兹定理
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 半导体物理 ####
+semiconductor:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/semiconductor/index
+  - title: 固体物理导论
+    children:
+      - title: 晶体结构
+        url: /courses/sophomore/semiconductor/晶体结构
+  - title: 1 半导体中的电子状态
+    children:
+      - title: 半导体的晶格结构和结合性质
+      - title: 半导体中的电子状态和能带
+      - title: 半导体中电子的运动 有效质量
+      - title: 本征半导体的导电机构空穴
+  - title: 2 半导体中杂质和缺陷能级
+  - title: 3 半导体中载流子的统计分布
+  - title: 4 半导体的导电性
+  - title: 5 非平衡载流子
+  - title: 6 pn结
+  - title: 7 金属和半导体的接触
+  - title: 8 半导体表面与MIS结构
+  - title: 9 半导体异质结构
+  - title: 10 半导体的光学性质和光电与发光现象
+  - title: 11 半导体的热电性质
+  - title: 12 半导体的磁和压阻效应
+  - title: 13 非晶态半导体
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 通信电子线路 ####
+commuelectronic:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/commuelectronic/index
+      - title: 资源
+        url: /courses/sophomore/commuelectronic/resources
+  - title: 1 绪论
+    childeren:
+      - title: 无线电
+  - title: 2 选频网络
+    children:
+      - title: 串并联谐振回路
+        url: /courses/sophomore/commuelectronic/串并联谐振回路
+      - title: 串并联等效互换
+      - title: 耦合回路
+  - title: 3 高频小信号放大器
+    children:
+      - title: 晶体管高频等效电路
+      - title: 谐振放大器
+  - title: 4 非线性、时变参量电路和变频器
+    children:
+      - title: 非线性元件与电路
+      - title: 时变参量电路
+      - title: 变频器与混频器
+  - title: 5 高频功率放大器
+    children:
+      - title: 晶体管谐振功率放大器
+      - title: 丁类（D）功率放大器
+      - title: 戊类（E）功率放大器
+      - title: 宽带高频功率放大器
+      - title: 功率合成器
+  - title: 6 正弦波振荡器
+    children:
+      - title: 工作原理与平衡稳定条件
+      - title: 反馈型 LC 振荡器
+      - title: 石英晶体振荡器
+  - title: 7 振幅调制与解调
+    children:
+      - title: 调幅波
+  - title: 8 角度调制与解调
+    children:
+      - title: 调角波
+  - title: 9 数字调制与解调
+    children:
+      - title: 振幅、移频、移相 键控
+  - title: 10 反馈控制电路
+    children:
+      - title: 自动增益控制（AGC）
+      - title: 自动频率微调（AFC）
+      - title: 锁相环路
+  - title: 11 频率合成技术
+    children:
+      - title: 频率合成器的技术指标
+      - title: 频率直接合成法
+      - title: 频率间接合成法
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+####信号与系统####
+signalandsystem:
+- title: 基本
+  children:
+    - title: 介绍
+      - url: 

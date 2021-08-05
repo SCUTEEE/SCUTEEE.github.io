@@ -1,0 +1,97 @@
+<!-- start custom head snippets -->
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+<script src="https://cdn.bootcdn.net/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+<script>document.cookie = "SameSite=None; Secure=true"</script>
+
+<!--baidu analysis start-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?281233e8fd041e6525bbc88784b8fad3";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--baidu analysis end-->
+
+<!--google analysis start-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159403144-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159403144-1');
+</script>
+<!--google analysis end-->
+
+<script>
+    var xlm_wid='15811';
+    var xlm_url='https://www.xianliao.me/';
+</script-->
+<script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script-->
+
+<script>
+jQuery(document).ready(function($) {
+    //文档加载完后检查广告联盟代码设置有没有起效，或者简单粗暴检测广告位置有没有被"display:none"
+    setTimeout(function() {
+        //typeof(window.google_jobrunner) === "undefined"
+        // document.getElementById("div").css("display")==='none'
+        if ( $("#AD").is(":hidden") ) {
+            //如果是就加载遮罩层提示
+            jQuery("body").html('<div class="san_wrapper"> \
+                <div class="san_inner"> \
+                    <h2>We do not like AdBlock.</h2> \ 
+            </div>');
+        }
+
+    }, 10000);
+
+});
+</script>
+
+<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+		if (history.length === 1) {
+		    window.opener = null;
+		    window.open('', '_self');
+		    window.close();
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+
+<script src="https://cdn.bootcss.com/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://cdn.bootcss.com/flowchart/1.14.1/flowchart.js"></script>
+<script>
+window.onload = function(){
+
+var ht = $('.language-flow').html();
+$('.language-flow').replaceWith('<div class="language-flow">' + ht + '</div>');
+
+var flowcharts = document.getElementsByClassName('language-flow')
+for (var i = 0; i < flowcharts.length; i++) {
+  var flow = flowcharts[i]
+  try {
+    var diagram = flowchart.parse(flow.textContent)
+    flow.id = 'flow_' + i
+    flow.innerHTML = ''
+    diagram.drawSVG(flow.id)
+  } catch (error) {
+    flow.innerHTML = '<pre class="language-text">' + error.toString() + '</pre>'
+  }
+}
+}
+</script>
+<!-- end custom head snippets -->

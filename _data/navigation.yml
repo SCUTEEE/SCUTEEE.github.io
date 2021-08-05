@@ -1,0 +1,1422 @@
+header:
+  - titles:
+      # @start locale config
+      en: &EN Home
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 主页
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 主页
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 홈
+      ko-KR: *KO
+      fr: &FR Accueil
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /
+  - titles:
+      # @start locale config
+      en: &EN Courses
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 课程
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 課程
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 코스
+      ko-KR: *KO
+      fr: &FR Sûrs
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /courses/index
+    key: courses
+
+  - titles:
+      # @start locale config
+      en: &EN Software
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 软件
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 軟件
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 소프트웨어
+      ko-KR: *KO
+      fr: &FR Logiciel
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /software/index
+    key: software
+
+  - titles:
+      # @start locale config
+      en: &EN Hardware
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 硬件
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 硬件
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 하드웨어
+      ko-KR: *KO
+      fr: &FR Matériel
+      fr-BE: *FR
+      fr-CA: *FR
+      fr-CH: *FR
+      fr-FR: *FR
+      fr-LU: *FR
+      # @end locale config
+    url: /hardware/index
+    key: hardware
+
+  - titles:
+      en: &EN Archive
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 归档
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 歸檔
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 아카이브
+      ko-KR: *KO
+    url: /archive.html
+
+  - titles:
+      en: &EN About
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      zh-Hans: &ZH_HANS 关于
+      zh: *ZH_HANS
+      zh-CN: *ZH_HANS
+      zh-SG: *ZH_HANS
+      zh-Hant: &ZH_HANT 關於
+      zh-TW: *ZH_HANT
+      zh-HK: *ZH_HANT
+      ko: &KO 소개
+      ko-KR: *KO
+    url: /about.html
+
+###########################
+######    软件       ######
+###########################
+software:
+  - title: 编程语言
+    children:
+      - title: 汇编
+        url: /software/assembly/index
+      - title: C
+        url: /software/c/index
+      - title: C++
+        url: /software/cpp/index
+      - title: Java
+      - title: Python
+        url: /software/python/index
+      - title: MATLAB
+        url: /software/matlab/index
+  - title: 算法
+    children:
+      - title: 算法设计与分析
+        url: /software/algorithm/index
+  - title: 机器学习
+    children:
+      - title: scikit-learn机器学习入门
+        url: /software/machine-learning/scikit-learn/index
+  - title: 深度学习
+    children:
+      - title: 深度学习基础
+        url: /software/deep-learning/index
+      - title: 深度学习入门-基于Python
+        url: /software/deep-learning-from-scratch/index
+      - title: TensorFlow
+        url: /software/tensorflow/index
+  - title: 图像处理
+    children:
+      - title: 基于 c 的图像处理
+        url: /software/cips/index
+  - title: 其他
+    children:
+      - title: 计算机网络
+        url: /courses/junior/computernetwork/index
+      - title: Linux
+        url: /software/linux/index
+#  - title: 计算机视觉
+#    children:
+#      - title: 计算机视觉导论
+
+#----汇编语言-----#
+assembly:
+  - title: 简介
+    children:
+      - title: 介绍
+        url: /software/assembly/index
+  - title: 1 基础知识
+    children:
+      - title: 基础知识
+        url: /software/assembly/基础知识
+  - title: 2 寄存器
+  - title: 3 寄存器（内存访问）
+  - title: 4 第一个程序
+  - title: 5 [BX]和loop命令
+  - title: 6 包含多个段的程序
+  - title: 7 更灵活地定位内存地址
+  - title: 8 数据处理的俩基本问题
+  - title: 9 转移指令的原理
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+#---------C-------------#
+
+c:
+  - title: 基础
+    children:
+      - title: c语言
+        url: /software/c/index
+      - title: linux-c 开发环境
+        url: /software/c/linux-c-开发环境
+      - title: 第一个程序
+        url: /software/c/第一个程序
+      - title: 变量与常量
+        url: /software/c/变量与常量
+      - title: 运算符和表达式
+        url: /software/c/运算符和表达式
+      - title: 语句
+        url: /software/c/语句
+      - title: 函数
+        url: /software/c/函数
+      - title: 数组与指针
+        url: /software/c/数组与指针
+      - title: gdb
+        url: /software/c/gdb
+      - title: 基于 c 的排序算法
+        url: /software/c/基于c的排序算法
+  - title: C语言本质
+    children:
+      - title: 数据类型详解
+        url: /software/c/数据类型详解
+
+#----- matlab  ------#
+matlab:
+  - title: MATLAB基础
+    children:
+      - title: 介绍
+        url: /software/matlab/index
+      - title: MATLAB基本语法
+        url: /software/matlab/MATLAB基本语法
+      - title: MATLAB编程基础
+        url: /software/matlab/MATLAB编程基础
+      - title: MATLAB画图
+        url: /software/matlab/MATLAB画图
+  - title: 简单数学实验
+    children:
+      - title: 斐波那契数列（数据拟合）
+        url: /software/matlab/斐波那契数列
+      - title: 迭代与分形
+        url: /software/matlab/迭代与分形
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+#-----算法设计与分析------#
+algorithm:
+  - title: 关于
+    children:
+      - title: 简介
+        url: /software/algorithm/index
+  - title: 1 算法概述
+    children:
+      - title: 复杂度
+        url: /software/algorithm/复杂度
+  - title: 2 递归与分支策略
+    children:
+      - title: 递归与分支
+        url: /software/algorithm/递归与分治
+      - title: 分治算法示例
+        url: /software/algorithm/分治算法示例
+  - title: 3 动态规划
+    children:
+      - title: 动态规划
+        url: /software/algorithm/动态规划
+      - title: 动态规划算法示例
+        url: /software/algorithm/动态规划算法示例
+  - title: 4 贪心算法
+    children:
+      - title: 贪心算法
+        url: /software/algorithm/贪心算法
+      - title: 贪心算法示例
+        url: /software/algorithm/贪心算法示例
+  - title: 5 回溯法
+    children:
+      - title: 回溯算法
+        url: /software/algorithm/回溯算法
+  - title: 6 分支限界法
+    children:
+      - title: 分支与界限
+        url: /software/algorithm/分支与界限
+  - title: 7 随机化算法
+    children:
+      - title: 随机化算法
+        url: /software/algorithm/随机化算法
+  - title: 8 线性规划与网络流
+    children: 
+      - title: 网络流
+        url: /software/algorithm/网络流
+  - title: 9 下界问题
+    children:
+      - title: 下界问题
+        url: /software/algorithm/下界问题
+  - title: 10 串与序列的算法
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+#------机器学习--------#
+scikit-learn:
+  - title: scikit-learn机器学习
+    children:
+      - title: 关于
+        url: /software/machine-learning/scikit-learn/index
+      - title: 机器学习介绍
+        url: /software/machine-learning/scikit-learn/机器学习介绍
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+#-----深度学习-----#
+deep-learning:
+  - title: 深度学习
+    children:
+      - title: 关于
+        url: /software/deep-learning/index
+  - title: 基础
+    children:
+      - title: 深度学习概述
+        url: /software/deep-learning/深度学习概述
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+#-----深度学习入门——基于Python------#
+deep-learning-from-scratch:
+  - title: 深度学习入门
+    children:
+      - title: 关于
+        url: /software/deep-learning-from-scratch/index
+  - title: 1 编程入门
+    children:
+      - title: Python
+      - title: Numpy
+      - title: Matplotlib
+  - title: 2 感知机
+    children:
+      - title: 感知机
+        url: /software/deep-learning-from-scratch/感知机
+  - title: 3 神经网络
+    children:
+      - title: 神经网络
+        url: /software/deep-learning-from-scratch/神经网络
+  - title: 4 神经网络的学习
+    children:
+      - title: 神经网络的学习
+        url: /software/deep-learning-from-scratch/神经网络的学习
+  - title: 5 误差反向传播法
+    children:
+      - title: 误差反向传播法
+        url: /software/deep-learning-from-scratch/误差反向传播法
+  - title: 6 与学习相关的技巧
+    children:
+      - title: 与学习有关的技巧
+        url: /software/deep-learning-from-scratch/与学习有关的技巧
+  - title: 7 卷积神经网络
+    children:
+      - title: 卷积神经网络
+        url: /software/deep-learning-from-scratch/卷积神经网络
+  - title: 返回
+    children:
+      - title: 软件
+        url: /software/index
+
+
+#----- TensorFlow ------#
+tensorflow:
+  - title: TensorFlow深度学习
+    children:
+      - title: 开发环境安装
+        url: /software/tensorflow/install
+  - title: 回归问题
+    children:
+      - title: 回归问题
+  - title: 分类问题
+    children:
+      - title: 分类问题
+  - title: TensorFlow基础
+    children:
+      - title: 张量
+  - title: TensorFlow 进阶
+  - title: 神经网络
+
+cips:
+  - title: 基于c的图像处理
+    children:
+      - title: 前言
+        url: /software/cips/index
+      - title: 介绍CIPS
+        url: /software/cips/介绍CIPS
+      - title: 图片输入输出
+        url: /software/cips/图片输入输出
+      - title: Halftoning算法
+        url: /software/cips/Halftoning算法
+      - title: 直方图与均衡化
+        url: /software/cips/直方图与均衡化
+
+
+###### linux ##########
+linux:
+  - title: Linux 命令行与脚本
+    children:
+      - title: 简介
+        url: /software/linux/index
+      - title: 初识 Linux shell
+        url: /software/linux/初识Linux-shell
+      - title: 走进 shell
+        url: /software/linux/走进shell
+      - title: 基本的 bash shell 命令
+        url: /software/linux/基本的bash-shell命令
+      - title: 更多 bash 命令
+        url: /software/linux/更多bash命令
+      - title: 理解 shell
+        url: /software/linux/理解shell
+      - title: 使用 Linux 环境变量
+        url: /software/linux/使用Linux环境变量
+      - title: 理解Linux文件权限
+        url: /software/linux/理解Linux文件权限
+      - title: shell脚本编程基础
+        url: /software/linux/shell脚本编程基础
+      - title: 使用结构化命令
+        url: /software/linux/使用结构化命令
+      - title: 循环命令
+        url: /software/linux/循环命令
+
+
+###########################
+######      硬件       ####
+###########################
+hardware:
+  - title: 硬件平台
+    children:
+      - title: 8051单片机
+        url: /hardware/8051/index
+      - title: stm32
+      - title: 树莓派
+      - title: Arduino 
+        url: /hardware/Arduino/index
+      - title: MSP432
+        url: /hardware/MSP432/index
+  - title: 硬件语言
+    children:
+      - title: VHDL
+        url: /hardware/VHDL/index
+  - title: 硬件项目
+    children:
+      - title: drone
+        url: /hardware/drone/index
+
+#------- 8051 -------#
+MCU8051:
+  - title: 简介
+    children:
+      - title: 8051单片机
+        url: /hardware/8051/index
+      - title: 8051电路
+        url: /hardware/8051/8051电路
+  - title: 软件与硬件
+    children:
+      - title: 8051硬件结构
+        url: /hardware/8051/8051硬件结构
+      - title: 8051指令系统
+        url: /hardware/8051/8051指令系统
+      - title: 8051常用的汇编程序
+        url: /hardware/8051/8051常用的汇编程序
+      - title: 中断与定时器
+        url: /hardware/8051/中断与定时器
+
+
+#------ stm32 -------#
+stm32:
+  - title: 基本架构
+  - title: 模块
+
+
+#------ Arduino ----#
+Arduino:
+  - title: Arduino
+    children:
+      - title: PubSubClient使用简介
+        url: /hardware/Arduino/PubSubClient使用指南
+
+#------ VHDL ------#
+VHDL:
+  - title: VHDL
+    children:
+      - title: VHDL basics
+        url: /hardware/VHDL/index
+      - title: VHDL abbreviation
+        url: /hardware/VHDL/abbreviation
+      - title: VHDL 实验
+        url: /hardware/VHDL/experiments
+      - title: VHDL 复习
+        url: /hardware/VHDL/复习
+  - title: Chapter 2
+    children:
+      - title: VHDL Invariants
+        url: /hardware/VHDL/VHDL-Invariants
+  - title: Chapter 3
+    children:
+      - title: VHDL Design Units
+        url: /hardware/VHDL/VHDL-Design-Units
+  - title: Chapter 4
+    children:
+      - title: VHDL Programming Paradigm
+        url: /hardware/VHDL/VHDL-Programming-Paradigm
+  
+  - title: Chapter 5
+    children:
+      - title: Standard Models in VHDL Architectures
+        url: /hardware/VHDL/Standard-Models-in-VHDL-Architectures
+
+#--------drone----------#
+drone:
+  - title: drone
+    children:
+      - title: 简介
+        url: 
+
+
+####################################
+#             大学课程             #
+####################################
+courses:
+  - title: 电科、信工、微电子
+    children:
+      - title: 索引
+        url: /courses/index
+      - title: 大一（无）
+        url: /courses/freshman/index
+      - title: 大二
+        url: /courses/sophomore/index
+      - title: 大三
+        url: /courses/junior/index
+      - title: 大四（无）
+        url: /courses/senior/index
+
+################
+#    大一      #
+################
+freshman:
+  - title: 简介
+    children:
+       - title: 学长的话
+         url: /courses/freshman/index
+  - title: 上学期
+    children:
+      - title: 数学分析（上）
+        url: /courses/freshman/mathanalysis/index
+      - title: 线性代数
+      - title: 大学物理（上）
+      - title: C++程序设计基础
+        url: /software/cpp/index
+      - title: 计算机组成原理
+        url: /courses/freshman/principle-of-computer/index
+  - title: 下学期
+    children:
+      - title: 数学分析（下）
+        url: /courses/freshman/mathanalysis/index
+      - title: 大学物理（下）
+      - title: 电路
+        url: /courses/freshman/circuit/index
+      - title: 面向对象程序设计
+  - title: 返回
+    children:
+      - title: 课程
+        url: /courses/index
+
+
+#####数学分析#####
+mathanalysis:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/freshman/mathanalysis/index
+  - title: 1 集合与函数
+    children:
+      - title: 集合与实数集
+        url: /courses/freshman/mathanalysis/集合与实数集
+  - title: 7 多元函数微分学
+    children:
+      - title: 多元函数的极限、连续和微分
+        url: /courses/freshman/mathanalysis/多元函数的极限、连续和微分
+      - title: 方向导数与梯度
+        url: /courses/freshman/mathanalysis/方向导数与梯度
+  - title: 返回
+    children:
+      - title: 大一
+        url: /courses/freshman/index
+
+########### 电路 ###############
+circuit:
+  - title: 电路
+    children:
+      - title: 简介
+        url: /courses/freshman/circuit/index
+      - title: 电路复习
+        url: /courses/freshman/circuit/电路复习
+  - title: 返回
+    children:
+      - title: 大一
+        url: /courses/freshman/index
+
+######### 计组 ##############
+principle-of-computer:
+  - title: 计算机z组成原理
+    children:
+      - title: 概论
+        url: /courses/freshman/principle-of-computer/index
+      - title: 运算方法和运算器
+        url: /courses/freshman/principle-of-computer/运算方法和运算器
+      - title: 存储器
+        url: /courses/freshman/principle-of-computer/存储器
+      - title: 中央处理器
+        url: /courses/freshman/principle-of-computer/中央处理器
+      - title: IO系统
+        url: /courses/freshman/principle-of-computer/IO系统
+      - title: 8086汇编
+        url: /courses/freshman/principle-of-computer/8086汇编
+  - title: 返回
+    children:
+      - title: 大一
+        url: /courses/freshman/index
+
+
+################
+#     大二     #
+################
+sophomore:
+  - title: 简介
+    children:
+      - title: 学长的话
+        url: /courses/sophomore/index
+  - title: 上学期
+    children:
+#      - title: 复变函数
+#      - title: 模拟电子技术
+#      - title: 数字电子技术
+      - title: 软件工程
+  - title: 下学期
+    children:
+      - title: 概率论与数理统计
+        url: /courses/sophomore/statistics/index
+      - title: 电磁场与电磁波
+        url: /courses/sophomore/electromagnetism/index
+      - title: 半导体物理
+        url: /courses/sophomore/semiconductor/index
+      - title: 微机系统与接口
+        url: /courses/sophomore/microcomputer/index
+      - title: 通信电子线路
+        url: /courses/sophomore/commuelectronic/index
+      - title: 信号与系统
+        url: /courses/sophomore/signalandsystem/index
+  - title: 返回
+    children:
+      - title: 课程
+        url: /courses/index
+
+#### 概率论与数理统计 ####
+statistics:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/statistics/index
+  - title: 1 概率论的基本概念
+    children:
+      - title: 概率论的基本概念
+        url: /courses/sophomore/statistics/概率论的基本概念
+      - title: 全概率公式与贝叶斯公式
+        url: /courses/sophomore/statistics/全概率公式与贝叶斯公式
+      - title: 事件独立性
+        url: /courses/sophomore/statistics/事件独立性
+  - title: 2 随机变量及其分布
+    children:
+      - title: 一元离散随机变量
+        url: /courses/sophomore/statistics/一元离散随机变量
+      - title: 一元连续随机变量
+        url: /courses/sophomore/statistics/一元连续随机变量
+      - title: 一元随机变量练习题
+        url: /courses/sophomore/statistics/一元随机变量练习题
+  - title: 3 随机向量及其分布
+    children:
+      - title: 二元离散随机变量
+        url: /courses/sophomore/statistics/二元离散随机变量
+      - title: 二元连续随机变量
+        url: /courses/sophomore/statistics/二元连续随机变量
+      - title: 二元随机变量练习题
+        url: /courses/sophomore/statistics/二元随机变量练习题
+  - title: 4 数字特征
+    children:
+      - title: 期望与方差
+        url: /courses/sophomore/statistics/期望与方差
+      - title: 协方差与相关系数
+        url: /courses/sophomore/statistics/协方差与相关系数
+      - title: 多元随机变量的数字特征
+        url: /courses/sophomore/statistics/多元随机变量的数字特征
+      - title: 随机变量的数字特征练习题
+        url: /courses/sophomore/statistics/随机变量的数字特征练习题
+  - title: 5 大数定律与中心极限定理
+    children:
+      - title: 依概率收敛与大数定理
+        url: /courses/sophomore/statistics/依概率收敛与大数定理
+      - title: 中心极限定理
+        url: /courses/sophomore/statistics/中心极限定理
+  - title: 6 数理统计的基本概念
+    children:
+      - title: 统计的基础概念
+        url: /courses/sophomore/statistics/统计的基础概念
+      - title: 统计量的分布
+        url: /courses/sophomore/statistics/统计量的分布
+  - title: 7 参数估计
+    children:
+      - title: 矩估计与极大似然估计
+        url: /courses/sophomore/statistics/矩估计与极大似然估计
+      - title: 估计的评价标准
+        url: /courses/sophomore/statistics/估计的评价标准
+      - title: 置信区间
+        url: /courses/sophomore/statistics/置信区间
+  - title: 8 假设检验
+    children:
+        - title: 假设检验
+          url: /courses/sophomore/statistics/假设检验
+        - title: 单个正态总体的假设检验
+          url: /courses/sophomore/statistics/单个正态总体的假设检验
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 电磁场与电磁波 ####
+electromagnetism:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/electromagnetism/index
+  - title: 1 矢量分析
+    children:
+      - title: 坐标系和代数
+        url: /courses/sophomore/electromagnetism/坐标系和代数
+      - title: 标量场的梯度
+        url: /courses/sophomore/electromagnetism/标量场的梯度
+      - title: 矢量场的散度
+        url: /courses/sophomore/electromagnetism/矢量场的散度
+      - title: 矢量场的旋度
+        url:  /courses/sophomore/electromagnetism/矢量场的旋度
+      - title: 亥姆霍兹定理
+        url: /courses/sophomore/electromagnetism/亥姆霍兹定理
+  - title: 2 静电场
+    children:
+      - title: 库伦定理与电场强度
+        url: /courses/sophomore/electromagnetism/库伦定理与电场强度
+      - title: 静电场的散度与旋度
+        url: /courses/sophomore/electromagnetism/静电场的散度与旋度
+      - title: 电位与电压
+        url: /courses/sophomore/electromagnetism/电位与电压
+      - title: 电介质
+        url: /courses/sophomore/electromagnetism/电介质
+      - title: 泊松方程与边界条件
+        url: /courses/sophomore/electromagnetism/泊松方程与边界条件
+      - title: 电容
+        url: /courses/sophomore/electromagnetism/电容
+      - title: 静电场的能量
+        url: /courses/sophomore/electromagnetism/静电场的能量
+      - title: 静电场小结
+        url: /courses/sophomore/electromagnetism/静电场小结
+  - title: 3 恒定电场
+    children:
+      - title: 恒定电场
+        url: /courses/sophomore/electromagnetism/恒定电场
+  - title: 4 恒定磁场
+    children:
+      - title: 磁感应强度
+        url: /courses/sophomore/electromagnetism/磁感应强度
+      - title: 磁场的散度与旋度
+        url: /courses/sophomore/electromagnetism/磁场的散度与旋度
+      - title: 矢量磁位与矢量泊松方程
+        url: /courses/sophomore/electromagnetism/矢量磁位与矢量泊松方程
+      - title: 磁偶极子与磁介质
+        url: /courses/sophomore/electromagnetism/磁偶极子与磁介质
+      - title: 恒定磁场的边界条件
+        url: /courses/sophomore/electromagnetism/恒定磁场的边界条件
+      - title: 电感
+        url: /courses/sophomore/electromagnetism/电感
+  - title: 5 静态场的边值问题
+    children: 
+      - title: 静态场的边值问题
+        url: /courses/sophomore/electromagnetism/静态场的边值问题
+      - title: 镜像法
+        url: /courses/sophomore/electromagnetism/镜像法
+      - title: 分离变量法
+        url: /courses/sophomore/electromagnetism/分离变量法
+  - title: 6 时变电磁场
+    children:
+      - title: 麦克斯韦方程组
+        url: /courses/sophomore/electromagnetism/麦克斯韦方程组
+      - title: 边界条件与波动方程
+        url: /courses/sophomore/electromagnetism/边界条件与波动方程
+      - title: 时变场的位函数
+        url: /courses/sophomore/electromagnetism/时变场的位函数
+      - title: 坡印廷定理
+        url: /courses/sophomore/electromagnetism/坡印廷定理
+      - title: 时谐变电磁场
+        url: /courses/sophomore/electromagnetism/时谐变电磁场
+  - title: 7 平面电磁波
+    children:
+      - title: 平面电磁波
+        url: /courses/sophomore/electromagnetism/平面电磁波
+      - title: 导电媒质中的平面波
+        url: /courses/sophomore/electromagnetism/导电媒质中的平面波
+  - title: 8 波导与谐振腔
+  - title: 附录
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 半导体物理 ####
+semiconductor:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/semiconductor/index
+  - title: 固体物理导论
+    children:
+      - title: 晶体结构
+        url: /courses/sophomore/semiconductor/晶体结构
+      - title: 倒易点阵与布里渊区
+        url: /courses/sophomore/semiconductor/倒易点阵与布里渊区
+      - title: 自由电子费米气体
+        url: /courses/sophomore/semiconductor/自由电子费米气体
+      - title: 能带与能隙
+        url: /courses/sophomore/semiconductor/能带与能隙
+  - title: 1 半导体中的电子状态
+    children:
+      - title: 电子的运动与有效质量
+        url: /courses/sophomore/semiconductor/电子的运动与有效质量
+      - title: 回旋共振和等能面
+        url: /courses/sophomore/semiconductor/回旋共振和等能面
+  - title: 2 半导体中杂质和缺陷能级
+    children:
+      - title: 杂质
+        url: /courses/sophomore/semiconductor/杂质
+      - title: 缺陷
+        url: /courses/sophomore/semiconductor/缺陷
+  - title: 3 半导体中载流子的统计分布
+    children:
+      - title: 状态密度
+        url: /courses/sophomore/semiconductor/状态密度
+      - title: 费米能级与载流子统计分布
+        url: /courses/sophomore/semiconductor/费米能级与载流子统计分布
+  - title: 4 半导体的导电性
+    children:
+      - title: 载流子的漂移运动与散射
+        url: /courses/sophomore/semiconductor/载流子的漂移运动与散射
+  - title: 5 非平衡载流子
+  - title: 6 pn结
+  - title: 7 金属和半导体的接触
+  - title: 8 半导体表面与MIS结构
+  - title: 9 半导体异质结构
+  - title: 10 半导体的光学性质和光电与发光现象
+  - title: 11 半导体的热电性质
+  - title: 12 半导体的磁和压阻效应
+  - title: 13 非晶态半导体
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+#### 通信电子线路 ####
+commuelectronic:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/commuelectronic/index
+      - title: 资源
+        url: /courses/sophomore/commuelectronic/resources
+  - title: 1 绪论
+    childeren:
+      - title: 无线电
+  - title: 2 选频网络
+    children:
+      - title: 串并联谐振回路
+        url: /courses/sophomore/commuelectronic/串并联谐振回路
+      - title: 串并联等效互换
+        url: /courses/sophomore/commuelectronic/串并联等效互换
+      - title: 耦合回路
+        url: /courses/sophomore/commuelectronic/耦合回路
+  - title: 3 高频小信号放大器
+    children:
+      - title: 晶体管高频小信号等效电路与参数
+        url: /courses/sophomore/commuelectronic/晶体管高频小信号等效电路与参数
+      - title: 单调谐回路谐振放大器
+        url: /courses/sophomore/commuelectronic/单调谐回路谐振放大器
+      - title: 双调谐回路谐振放大器
+        url: /courses/sophomore/commuelectronic/双调谐回路谐振放大器
+      - title: 谐振放大器的噪声
+        url: /courses/sophomore/commuelectronic/谐振放大器的噪声
+  - title: 4 非线性、时变参量电路和变频器
+    children:
+      - title: 非线性元件与电路
+        url: /courses/sophomore/commuelectronic/非线性元件与电路
+      - title: 线性时变参量电路
+        url: /courses/sophomore/commuelectronic/线性时变参量电路
+      - title: 变频器与混频器
+        url: /courses/sophomore/commuelectronic/变频器与混频器
+      - title: 混频器的干扰
+        url: /courses/sophomore/commuelectronic/混频器的干扰器
+  - title: 5 高频功率放大器
+    children:
+      - title: 高频功率放大器
+        url: /courses/sophomore/commuelectronic/高频功率放大器
+      - title: 晶体管的高频特性
+        url: /courses/sophomore/commuelectronic/晶体管的高频特性
+      - title: 高频功率放大器的电路组成
+        url: /courses/sophomore/commuelectronic/高频功率放大器的电路组成
+      - title: 宽带高频功率放大器
+      - title: 功率合成器
+  - title: 6 正弦波振荡器
+    children:
+      - title: LC振荡器
+        url: /courses/sophomore/commuelectronic/LC振荡器
+      - title: 反馈型 LC 振荡器
+      - title: 晶体振荡器
+        url: /courses/sophomore/commuelectronic/晶体振荡器
+  - title: 7 振幅调制与解调
+    children:
+      - title: 振幅调制
+        url: /courses/sophomore/commuelectronic/振幅调制
+      - title: 包络检波
+        url: /courses/sophomore/commuelectronic/包络检波
+  - title: 8 相位调制与解调
+    children:
+      - title: 相位调制
+        url: /courses/sophomore/commuelectronic/相位调制
+      - title: 调频方法
+        url: /courses/sophomore/commuelectronic/调频方法
+      - title: 相位鉴频器
+        url: /courses/sophomore/commuelectronic/相位鉴频器
+  - title: 9 数字调制与解调
+    children:
+      - title: 振幅、移频、移相 键控
+  - title: 10 反馈控制电路
+    children:
+      - title: 自动增益控制（AGC）
+      - title: 自动频率微调（AFC）
+      - title: 锁相环路
+  - title: 11 频率合成技术
+    children:
+      - title: 频率合成器的技术指标
+      - title: 频率直接合成法
+      - title: 频率间接合成法
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+####信号与系统####
+signalandsystem:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/signalandsystem/index
+  - title: 1 信号与系统
+    children:
+      - title: 信号
+        url: /courses/sophomore/signalandsystem/信号
+      - title: 系统
+        url: /courses/sophomore/signalandsystem/系统
+      - title: 第一章习题
+        url: /courses/sophomore/signalandsystem/第一章习题
+  - title: 2 线性时不变系统
+    children:
+      - title: 卷积和与卷积积分
+        url: /courses/sophomore/signalandsystem/卷积和与卷积积分
+      - title: 线性时不变系统的性质
+  - title: 3 周期信号的傅里叶级数表示
+    children:
+      - title: 连续时间傅里叶级数
+        url: /courses/sophomore/signalandsystem/连续时间傅里叶级数
+      - title: 离散时间傅里叶级数
+        url: /courses/sophomore/signalandsystem/离散时间傅里叶级数
+  - title: 4 连续时间傅里叶变换
+    children:
+      - title: 连续时间傅里叶变换
+        url: /courses/sophomore/signalandsystem/连续时间傅里叶变换
+      - title: 连续时间傅里叶变换的性质
+        url: /courses/sophomore/signalandsystem/连续时间傅里叶变换的性质
+      - title: 由LCCDR表征的系统
+        url: /courses/sophomore/signalandsystem/由LCCDR表征的系统
+  - title: 5 离散时间傅里叶变换
+    children:
+      - title: 离散时间傅里叶变换
+        url: /courses/sophomore/signalandsystem/离散时间傅里叶变换
+      - title: 离散时间傅里叶变换的性质
+        url: /courses/sophomore/signalandsystem/离散时间傅里叶变换的性质
+      - title: 由LCCDR表征的系统
+        url: /courses/sophomore/signalandsystem/由LCCDR表征的系统
+  - title: 6 信号与系统的时域和频域特性
+    children:
+      - title: 傅里叶变换的模和相位表示
+        url: /courses/sophomore/signalandsystem/傅里叶变换的模和相位表示
+      - title: 理想频率选择滤波器
+        url: /courses/sophomore/signalandsystem/理想频率选择滤波器
+      - title: 一阶与二阶连续时间系统
+        url: /courses/sophomore/signalandsystem/一阶与二阶连续时间系统
+  - title: 7 采样
+    children:
+      - title: 采样
+        url: /courses/sophomore/signalandsystem/采样
+      - title: 模数转换与数模转换
+        url: /courses/sophomore/signalandsystem/模数转换与数模转换
+      - title: 频域采样
+        url: /courses/sophomore/signalandsystem/频域采样
+  - title: 8 通信系统
+  - title: 9 拉普拉斯变换
+    children:
+      - title: 拉普拉斯变换
+        url: /courses/sophomore/signalandsystem/拉普拉斯变换
+      - title: 拉普拉斯变换分析
+        url: /courses/sophomore/signalandsystem/拉普拉斯变换分析
+  - title: 10 z变换
+    children:
+      - title: z变换
+        url: /courses/sophomore/signalandsystem/z变换
+      - title: z变换分析
+        url: /courses/sophomore/signalandsystem/z变换分析
+  - title: 11 线性反馈系统
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+##### microcomputer
+microcomputer:
+  - title: 基本
+    children:
+      - title: 介绍
+        url: /courses/sophomore/microcomputer/index
+  - title: 1 计算机基本原理
+    children:
+      - title: 微型计算机结构
+        url: /courses/sophomore/microcomputer/微型计算机结构
+      - title: 数制
+        url: /courses/sophomore/microcomputer/数制
+  - title: 2 8086系统结构
+    children:
+      - title: 8086CPU结构与寄存器
+        url: /courses/sophomore/microcomputer/8086CPU结构与寄存器
+      - title: 存储器
+        url: /courses/sophomore/microcomputer/存储器
+      - title: 引脚
+      - title: 总线
+        url: /courses/sophomore/microcomputer/总线
+  - title: 3 8086指令系统
+    children:
+      - title: 指令系统
+        url: /courses/sophomore/microcomputer/指令系统
+  - title: 4 汇编语言
+  - title: 5 存储器
+  - title: 6 总线
+  - title: 7 I/O系统
+  - title: 8 中断系统
+  - title: 9 计数器与定时器
+  - title: 串行通信
+  - title: A/D 与 D/A
+  - title: 返回
+    children:
+      - title: 大二
+        url: /courses/sophomore/index
+
+##### 马克思主义原理
+marxism:
+  - title: 马克思主义
+    children:
+      - title: 导论
+        url: 
+      - title: 第一章
+      - title: 第二章
+
+
+####################
+#                  #
+#     大三         #
+#                  #
+####################
+
+
+junior:
+  - title: 简介
+    children:
+      - title: 学长的话
+        url: /courses/junior/index
+  - title: 上学期
+    children:
+      - title: 数字信号处理
+        url: /courses/junior/dsp/index
+      - title: 数字系统设计(VHDL)
+        url: /hardware/VHDL/index
+#      - title: 自动控制原理
+#        url: /courses/junior/autocontrol/index
+#      - title: 数字通信原理
+#        url: /courses/junior/principleofcommu/index
+      - title: 半导体器件
+        url: /courses/junior/semiconductor-device/index
+      - title: 计算机网络
+        url: /courses/junior/computernetwork/index
+  - title: 下学期
+    children:
+      - title: 模拟集成电路
+        url: /courses/junior/analog-integrated-circuit/index
+#      - title: 集成电路制造技术
+#        url: /courses/junior/ic-fabrication/index
+  - title: 返回
+    children:
+      - title: 课程
+        url: /courses/index
+
+
+####### dsp  ###############
+dsp:
+  - title: 1 信号和信号处理
+    children:
+      - title: 介绍
+        url: /courses/junior/dsp/index
+      - title: 课堂作业
+        url: /courses/junior/dsp/课堂作业
+      - title: DTMF的matlab实现
+        url: /courses/junior/dsp/DTMF的matlab实现
+  - title: 2 时域中的离散时间信号
+    children:
+      - title: 时域中的离散时间信号
+        url: /courses/junior/dsp/时域中的离散时间信号
+      - title: 自相关实验
+        url: /courses/junior/dsp/自相关实验
+  - title: 3 频域中的离散时间信号
+    children:
+      - title: 频域中的离散时间信号
+        url: /courses/junior/dsp/频域中的离散时间信号
+  - title: 4 离散时间系统
+    children:
+      - title: 离散时间系统
+        url: /courses/junior/dsp/离散时间系统
+  - title: 5 有限长离散时间变换
+    children:
+      - title: 正交变换
+        url: /courses/junior/dsp/正交变换
+      - title: 离散傅里叶变换
+        url: /courses/junior/dsp/离散傅里叶变换
+      - title: FFT
+        url: /courses/junior/dsp/FFT
+      - title: 离散傅里叶变换实验
+        url: /courses/junior/dsp/离散傅里叶变换实验
+  - title: 6 z变换
+    children:
+      - title: Z变换分析
+        url: /courses/junior/dsp/Z变换分析
+  - title: 7 LTI离散时间系统
+    children:
+      - title: 变换域中的LTI系统
+        url: /courses/junior/dsp/变换域中的LTI系统
+      - title: 滤波器设计实验
+        url: /courses/junior/dsp/滤波器设计实验
+  - title: 8 数字滤波器结构
+    children:
+      - title: 数字滤波器的结构与实现
+        url: /courses/junior/dsp/数字滤波器的结构与实现
+  - title: 9 IIR数字滤波器设计
+    children:
+      - title: IIR设计
+        url: /courses/junior/dsp/IIR设计
+  - title: 10 FIR数字滤波器设计
+    children:
+      - title: FIR设计
+        url: /courses/junior/dsp/FIR设计
+  - title: 返回
+    children:
+      - title: 大三
+        url: /courses/junior/index
+
+
+########### 数字通信原理 #########
+principleofcommu:
+  - title: 1 简介
+    children:
+      - title: 课程介绍
+        url: /courses/junior/principleofcommu/index
+      - title: 概论
+        url: /courses/junior/principleofcommu/概论
+  - title: 返回
+    children:
+      - title: 大三
+        url: /courses/junior/index
+
+
+########### 自动控制原理 ###########
+autocontrol:
+  - title: 1 简介
+    children:
+      - title: 介绍
+        url: /courses/junior/autocontrol/index
+      - title: 自动控制原理绪论
+        url: /courses/junior/autocontrol/自动控制原理绪论
+  - title: 返回
+    children:
+      - title: 大三
+        url: /courses/junior/index
+
+
+########### 半导体物理器件 ###########
+semiconductordevice:
+  - title:  半导体器件
+    children:
+      - title: 介绍
+        url: /courses/junior/semiconductor-device/index
+  - title: Chapter 1
+    children:
+      - title: Electrons and Holes in Semiconductors
+        url: /courses/junior/semiconductor-device/Electrons-and-Holes
+  - title: Chapter 2
+    children:
+      - title: Motion and Recombination of Electrons and Holes
+        url: /courses/junior/semiconductor-device/Motion-and-Recombination
+  - title: Chapter 3
+    children:
+      - title: Device Fabrication Technology
+        url: /courses/junior/semiconductor-device/Device-Fabrication-Technology
+  - title: Chapter 4
+    children:
+      - title: PN and Metal-Semiconductor Junctions
+        url: /courses/junior/semiconductor-device/PN-and-MS-Junctions
+  - title: Chapter 5
+    children:
+      - title: MOS Capacitor
+        url: /courses/junior/semiconductor-device/MOS-Capacitor
+  - title: Chapter 6
+    children:
+      - title: MOS Transistor
+        url: /courses/junior/semiconductor-device/MOS-Transistor
+
+  - title: Chapter 8
+    children:
+      - title: Bipolar Transistors
+        url: /courses/junior/semiconductor-device/Bipolar-Transistor
+  - title: 返回
+    children:
+      - title: 大三
+        url: /courses/junior/index
+
+########### 计算机网络###########
+computernetwork:
+  - title: 计算机网络
+    children:
+      - title: 介绍
+        url: /courses/junior/computernetwork/index
+      - title: 绪论
+        url: /courses/junior/computernetwork/计算机网络绪论
+  - title: 物理层
+    children:
+      - title: 物理层
+        url: /courses/junior/computernetwork/物理层
+      - title: 双绞线
+        url: /courses/junior/computernetwork/双绞线
+  - title: 数据链路层
+    children:
+      - title: 数据链路层
+        url: /courses/junior/computernetwork/数据链路层
+      - title: 介质访问控制子层
+        url: /courses/junior/computernetwork/介质访问控制子层
+  - title: 网络层
+    children:
+      - title: 网络层
+        url: /courses/junior/computernetwork/网络层
+  - title: 传输层
+    children:
+      - title: 传输层
+        url: /courses/junior/computernetwork/传输层
+  - title: 应用层
+    children:
+      - title: 应用层
+        url: /courses/junior/computernetwork/应用层
+  - title: 返回
+    children:
+      - title: 大三
+        url: /courses/junior/index
+
+
+########## 模拟集成电路 ###########
+analog-integrated-circuit:
+  - title: 模拟集成电路
+    children:
+      - title: 绪论
+        url: /courses/junior/analog-integrated-circuit/index
+      - title: MOS器件物理基础
+        url: /courses/junior/analog-integrated-circuit/MOS器件物理基础
+  - title: 单极放大器
+    children:
+      - title: 单极放大器概述
+        url: /courses/junior/analog-integrated-circuit/单极放大器概述
+      - title: Common-Source Stage
+        url: /courses/junior/analog-integrated-circuit/common-source-stage
+      - title: Source Follower
+        url: /courses/junior/analog-integrated-circuit/source-follower
+      - title: Common-Gate Stage
+        url: /courses/junior/analog-integrated-circuit/common-gate-stage
+      - title: Cascode Stage
+        url: /courses/junior/analog-integrated-circuit/cascode-stage
+      - title: 单极放大器作业
+        url: /courses/junior/analog-integrated-circuit/单极放大器作业
+      - title: 关于3.17题电路的纠错与分析
+        url: /courses/junior/analog-integrated-circuit/关于3_17题电路的纠错与分析
+  - title: 差动放大器
+    children:
+      - title: 差动放大器
+        url: /courses/junior/analog-integrated-circuit/差动放大器
+      - title: 差动放大器作业
+        url: /courses/junior/analog-integrated-circuit/差动放大器作业
+  - title: 电流镜
+    children:
+      - title: 电流镜
+        url: /courses/junior/analog-integrated-circuit/电流镜
+  - title: 频率响应
+    children:
+      - title: 频率响应
+        url: /courses/junior/analog-integrated-circuit/频率响应
+  - title: 噪声
+    children:
+      - title: 噪声
+        url: /courses/junior/analog-integrated-circuit/噪声
+      - title: 噪声作业
+        url: /courses/junior/analog-integrated-circuit/噪声作业
+  - title: 反馈
+    children:
+      - title: 反馈
+        url: /courses/junior/analog-integrated-circuit/反馈
+  - title: 运算放大器
+    children:
+      - title: 运算放大器
+        url: /courses/junior/analog-integrated-circuit/运算放大器
+      - title: 运算放大器作业
+        url: /courses/junior/analog-integrated-circuit/运算放大器作业
+  - title: 稳定性与频率补偿
+    children:
+      - title: 稳定性与频率补偿
+        url: /courses/junior/analog-integrated-circuit/稳定性与频率补偿
+      - title: 稳定性与频率补偿作业
+        url: /courses/junior/analog-integrated-circuit/稳定性与频率补偿作业
+  - title: 带隙基准
+    children:
+      - title: 带隙基准
+        url: /courses/junior/analog-integrated-circuit/带隙基准
+      - title: 带隙基准作业
+        url: /courses/junior/analog-integrated-circuit/带隙基准作业
+  - title: 振荡
+    children:
+      - title: 振荡
+        url: /courses/junior/analog-integrated-circuit/振荡
+      - title: 振荡作业
+        url: /courses/junior/analog-integrated-circuit/振荡作业
+  - title: 锁相环
+    children:
+      - title: 锁相环
+        url: /courses/junior/analog-integrated-circuit/锁相环
+
+###### 集成电路制造技术 #############
+ic-fabrication:
+  - title: 集成电路制造技术
+    children:
+      - title: 绪论
+        url: /courses/junior/ic-fabrication/index
+      - title: Doping Technology
+        url: /courses/junior/ic-fabrication/doping-technology
+      - title: Thin Film Technology
+        url: /courses/junior/ic-fabrication/thin-film-technology
+      - title: Lithography and Etching
+        url: /courses/junior/ic-fabrication/lithography-and-etching
+      - title: Process Integration
+        url: /courses/junior/ic-fabrication/process-integration
+      - title: Reliability Issues of IC Devices
+        url: /courses/junior/ic-fabrication/reliability-issues-of-ic-devices
+
+
+hide:
+  - title: 初中
+    children:
+      - title: 数学(简单几何)
+        url: /hide/junior-middle/simple-geometry/index
+  - title: 高中
+    children:
+      - title: 数学
+      - title: 物理
+
+senior-physics:
+  - title: 高中物理
+    children:
+      - title: 大纲
+        url: /hide/senior-middle/physics/index
+      - title: 高中物理的数学基础
+        url: /hide/senior-middle/physics/高中物理的数学基础
+      - title: 力
+        url: /hide/senior-middle/physics/力
+      - title: 物体的运动
+        url: /hide/senior-middle/physics/物体的运动
+      - title: 牛顿运动定律与万有引力
+        url: /hide/senior-middle/physics/牛顿运动定律与万有引力

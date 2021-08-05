@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SCUTEEE-ppt: DCT变换</title>
+
+		<meta name="description" content="简单介绍一下DCT变换">
+		<meta name="author" content="Todd Zhou">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <!----第1页---->
+				<section>
+                    <center>
+                        <h3>DCT变换</h3><br>
+                    </center>
+                </section>
+
+                <!----第2页---->
+				<section data-markdown>
+                    <textarea data-template>
+                        DCT，Discrete Cosine Transfrom，离散余弦变换
+                        
+                        常用于：
+
+                        * 一维
+                          * Dolby AC2 & AC3
+                          * Biomedical signals like EEG & ECG
+                          * Speech information compression
+                        * 二维
+                          * <span class="fragment highlight-red">JPEG Endoers</span>
+                          * MPEG-1 & MPEG-2
+                          * Image & Patterm Recognition
+                      </textarea>
+                </section>
+
+                <!----第3页---->
+				<section data-markdown>
+                    Step1：RGB 转 YCrCb
+
+                    ![YCbCr-color-spaces](https://i.loli.net/2020/10/22/vMSq9GLoD1azcCp.jpg)
+                </section>
+
+                <!----第4页---->
+				<section>
+                    图片中 8x8 的一小块：
+
+                    <table>
+                        <tr>
+                            <td>62</td> <td>55 </td><td> 55 </td><td> 54 </td><td> 49 </td><td> 48 </td><td> 47 </td><td> 55</td>
+                        </tr>
+                        <tr>
+                            <td>62 </td><td> 57 </td><td> 54 </td><td> 52 </td><td> 48 </td><td> 47 </td><td> 48 </td><td> 53</td>
+                        </tr>
+                        <tr>
+                            <td>61 </td><td> 60 </td><td> 52 </td><td> 49 </td><td> 48 </td><td> 47 </td><td> 49 </td><td> 54</td>
+                        </tr>
+                        <tr>
+                            <td>63 </td><td> 61 </td><td> 60 </td><td> 60 </td><td> 63 </td><td> 65 </td><td> 68 </td><td> 65</td>
+                        </tr>
+                        <tr>
+                            <td>67 </td><td> 67 </td><td> 70 </td><td> 74 </td><td> 79 </td><td> 85 </td><td> 91 </td><td> 92</td>
+                        </tr>
+                        <tr>
+                            <td>82 </td><td> 95 </td><td> 101 </td><td> 106 </td><td> 114 </td><td> 115 </td><td> 112 </td><td> 117</td>
+                        </tr>
+                        <tr>
+                            <td>96 </td><td> 111 </td><td> 115 </td><td> 119 </td><td> 128 </td><td> 128 </td><td> 130 </td><td> 127</td>
+                        </tr>
+                        <tr>
+                            <td>109 </td><td> 121 </td><td> 127 </td><td> 133 </td><td> 139 </td><td> 141 </td><td> 140 </td><td> 133</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!----第5页---->
+				<section data-markdown>
+                    对应的灰度图：
+
+                    ![灰度图](https://i.loli.net/2020/10/21/vMAebcth7fXrRCs.png)
+                </section>
+
+
+                <!----第6页---->
+				<section data-markdown>
+                    DCT：分解为基的线性组合
+
+                    ![DCT Basis](https://i.loli.net/2020/10/21/MNtrgTWEeDQCsfc.png)
+                </section>
+
+                <!----第7页---->
+				<section>
+                    分解后的结果：
+                    <table>
+                    <tr>
+                    <td>-211.8  </td><td>  9.2  </td><td>  6.3 </td><td>  -2.7  </td><td>  5.3  </td><td>  0.8  </td><td>  3.1  </td><td> -1.1</td>
+                    </tr><tr>
+                        <td>-213.2  </td><td> 10.5  </td><td>  7.7  </td><td> -1.7  </td><td>  3.2 </td><td>   0.4  </td><td>  1. </td><td>   -0.7</td>
+                    </tr><tr>
+                        <td>-213.5  </td><td>  9.5  </td><td> 10.2  </td><td> -0.9   </td><td> 1.4  </td><td> -2.5 </td><td>  -1.2 </td><td>  -0.8</td>
+                    </tr><tr>
+                        <td>-183.5  </td><td> -5.6  </td><td>  3.1 </td><td>   3.1 </td><td>  -1.1  </td><td>  1.1  </td><td> -0.9 </td><td>   1.1</td>
+                    </tr><tr>
+                        <td>-141.1 </td><td> -26.9  </td><td>  3.3 </td><td>   0.7 </td><td>  -0.4  </td><td>  1.3  </td><td> -0.2 </td><td>   0.4</td>
+                    </tr><tr>
+                        <td>-64.3  </td><td>-28.9 </td><td> -11.4  </td><td> -3.8  </td><td> -1.4 </td><td>  -6.1  </td><td>  0.1 </td><td>  -0.6</td>
+                    </tr><tr>
+                        <td>-24.7 </td><td> -27.6 </td><td> -11.5  </td><td> -2.2 </td><td>  -4.9  </td><td> -4.3  </td><td> -3.7  </td><td>  1.3</td>
+                    </tr><tr>
+                        <td>6.7 </td><td> -24.1 </td><td> -15.2  </td><td>  0.4 </td><td>  -5.3  </td><td> -1.2  </td><td> -2.5  </td><td>  0.1</td>
+                    </tr>
+                    </table>
+                </section>
+
+                <!----第8页---->
+				<section>
+                    利用量化表进行量化：
+                    $$
+                        \begin{array}{|c|c|c|c|c|c|c|c|}
+                        \hline
+                        6 & 12&14&14&18&24&49&72\\
+                        \hline
+                        11&12&13&17&22&35&64&92\\
+                        \hline
+                        10&14&16&22&37&55&78&95\\
+                        \hline
+                        16&19&24&29&56&64&87&98\\
+                        \hline
+                        24&26&40&51&68&81&103&112\\
+                        \hline
+                        40&58&57&87&109&104&121&100\\
+                        \hline
+                        48&60&69&80&103&113&120&103\\
+                        \hline
+                        51&55&56&62&77&92&101&99\\
+                        \hline
+                        \end{array}
+                    $$
+                </section>
+
+                <!----第9页---->
+				<section>
+                    最终得到的压缩图：
+                    $$
+                    \begin{array}{|c|c|c|c|c|c|c|c|}
+                    \hline
+                    -35 &  1&0 & 0&0&0& 0 & 0 \\
+                    \hline
+                     -19&1&1 & 0&0&0& 0&0 \\
+                     \hline
+                     -21&1&1 & 0& 0&0&0&0 \\
+                     \hline
+                     -12 & 0&0&0 & 0& 0&0& 0 \\
+                     \hline
+                      -6 & -1& 0&0&0& 0&0& 0 \\
+                     \hline
+                      -2 & 0 & 0 & 0&0&0&0&0 \\
+                     \hline
+                      0 & 0 & 0 & 0&0&0&0& 0 \\
+                     \hline
+                    0 & 0 & 0&0&0 & 0&0& 0 \\
+                    \hline
+                    \end{array}
+                    $$
+                </section>
+
+                <!----第10页---->
+				<section>
+                    反编码得到的图片：
+                    <table>
+                        <tr>
+                            <td>原图</td>
+                            <td>压缩图</td>
+                        </tr>
+                        <tr>
+                            <td><img title="dct_origin_picture" src="https://i.loli.net/2020/10/21/vMAebcth7fXrRCs.png"></td>
+                            <td><img title="dct_compressed_picture" src="https://i.loli.net/2020/10/22/GhRagVbEf9F3Q8J.png"></td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!----第11页---->
+				<section data-markdown>
+                    实验代码（Python）：
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.fft import dct, idct
+
+#设置显示一位小数点
+np.set_printoptions(precision=1, suppress=True)
+
+#原图
+origin_pic = np.array(
+    [
+        [62, 55, 55, 54, 49, 48, 47, 55],
+        [62, 57, 54, 52, 48, 47, 48, 53],
+        [61, 60, 52, 49, 48, 47, 49, 54],
+        [63, 61, 60, 60, 63, 65, 68, 65],
+        [67, 67, 70, 74, 79, 85, 91, 92],
+        [82, 95, 101, 106, 114, 115, 112, 117],
+        [96, 111, 115, 119, 128, 128, 130, 127],
+        [109, 121, 127, 133, 139, 141, 140, 133],
+    ]
+)
+#显示原图
+plt.figure("original picture")
+plt.imshow(origin_pic, cmap="gray")
+plt.show()
+
+#归一化
+centered_pic = origin_pic - 128
+
+#DCT
+dct_pic = dct(centered_pic, 2, norm="ortho")
+
+#量化表
+table = np.array(
+    [
+        [6, 12, 14, 14, 18, 24, 49, 72],
+        [11, 12, 13, 17, 22, 35, 64, 92],
+        [10, 14, 16, 22, 37, 55, 78, 95],
+        [16, 19, 24, 29, 56, 64, 87, 98],
+        [24, 26, 40, 51, 68, 81, 103, 112],
+        [40, 58, 57, 87, 109, 104, 121, 100],
+        [48, 60, 69, 80, 103, 113, 120, 103],
+        [51, 55, 56, 62, 77, 92, 101, 99],
+    ]
+)
+#量化
+compressed_pic = np.around(dct_pic / table)
+print(compressed_pic)
+
+#解码
+decode_pic = idct(compressed_pic * table, 2, norm="ortho") + 128
+#显示压缩图
+plt.figure("compressed picture")
+plt.imshow(decode_pic, cmap="gray")
+plt.show()
+```
+                </section>
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                math: {
+                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { 
+                        Macros: { RR: "{\\bf R}" },
+                        CommonHTML: { scale: 50 },
+                        "HTML-CSS": { scale: 10}
+                    }
+                },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMath, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

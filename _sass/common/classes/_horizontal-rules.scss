@@ -1,0 +1,58 @@
+//@mixin horizontal-rules() {
+//  &::before {
+//    display: block;
+//    font-size: map-get($base, font-size-h2);
+//    color: $text-color-l;
+//    text-align: center;
+//    letter-spacing: map-get($spacers, 4);
+//    content: "...";
+//  }
+//}
+
+@mixin horizontal-rules() {
+    height: .25em;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 24px 0;
+    margin-top: 24px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    margin-left: 0px;
+    background-color: #e1e4e8;
+    border: 0;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-rules {
+  @include horizontal-rules();
+}
