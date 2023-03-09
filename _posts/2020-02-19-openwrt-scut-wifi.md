@@ -13,13 +13,19 @@ show_author_profile: true
 
 <!--more-->
 
+# 2022/03/09 更新
+
+网络上已经有预编译好的 `scutclient.ipk`，我们无需自行编译，只需要根据自己的处理器架构，到 `https://op.supes.top/packages/` 中对应的文件夹里搜 `scutclient`，然后安装即可（先安装 scutclient，再安装 luci-app-scutclient）。不知道处理器架构的，可以运行该命令来查看：`cat /etc/openwrt_release | grep DISTRIB_ARCH`。下载得到 .ipk 文件，然后上传到路由器，用 `opkg install [文件名]` 来安装。安装好后，可以用网页端，或按后面的“登录校园网”一节来操作。
+
+-----
+
 # 声明
 
 本教程仅供技术交流，不希望触动学校的利益，不对架设宿舍 WiFi 的行为负责。
 
 # 准备
 
-* 一台装有 OpenWrt 的路由器（任何 OpenWrt 版本都行，我买的是 NetGear 的）
+* 一台装有 OpenWrt 的路由器（任何 OpenWrt 版本都行，我买的是 NetGear 的），或者软路由+普通路由器
 * 校园网账号
 * 网线
 * 一台装有 Linux 的 x86_64 设备（电脑/虚拟机/服务器，我在教程中用的是9元的阿里云服务器，如果你都没有，可以通过E-mail：todd310378072@outlook.com 联系一下我）
